@@ -1,0 +1,24 @@
+<div class="form-container" ng-controller="registration">
+    <h2>Register</h2>
+    <form style="width:400px">
+        <div class="form-group">
+            <label for="firstName">First name</label>
+            <input type="text" name="firstName" id="firstName" class="form-control" ng-model="firstname" required />
+        </div>
+        <div class="form-group">
+            <label for="lastName">Last name</label>
+            <input type="text" name="lastName" id="lastName" class="form-control" ng-model="lastname" required />
+        </div>
+        <div class="form-group">
+            <label for="username">Username</label>
+            <input type="text" name="username" id="uname" class="form-control" ng-model="uname" required />
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="pword" ng-model="pword" class="form-control" required />
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary" ng-click="register()">Register</button>
+        </div>
+    </form>
+</div>
